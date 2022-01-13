@@ -11,7 +11,6 @@ public class AssistantDTO {
     private int priceHour;
 
     //Constructor
-
     public AssistantDTO(Assistant assistant) {
         this.id = assistant.getId();
         this.name = assistant.getName();
