@@ -1,6 +1,6 @@
 package facades;
 
-
+import dtos.AssistantDTO;
 import dtos.AssistantsDTO;
 import entities.Assistant;
 
@@ -31,6 +31,23 @@ public class AssistantFacade {
         } finally {
             em.close();
         }
+    }
+
+    public Assistant createAssistant(Assistant assistant) {
+        EntityManager em = emf.createEntityManager();
+        try {
+            em.getTransaction().begin();
+
+            assistant.setName(assistant.getName());
+            assistant.setLanguage(assistant.getLanguage());
+            assistant.setYearExperience(assistant.getYearExperience());
+            assistant.setPriceHour(assistant.getPriceHour());
+
+            em.persist(assistant);
+            em.getTransaction().commit();
+        } finally {
+            em.close();
+        } return assistant;
     }
 
 

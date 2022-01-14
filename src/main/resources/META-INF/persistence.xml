@@ -8,6 +8,7 @@
         <class>entities.Movie</class>
         <class>entities.Actor</class>
         <class>entities.Assistant</class>
+        <class>entities.Booking</class>
         <!--    <class>entities.RenameMe</class>-->
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>

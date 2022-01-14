@@ -66,7 +66,7 @@ public class Assistant implements Serializable {
     }
 
     public int getYearExperience() {
-        return yearExperience;
+        return this.yearExperience;
     }
 
     public void setYearExperience(int yearExperience) {
